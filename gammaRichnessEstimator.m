@@ -92,7 +92,7 @@ if nargin < 5 || isempty(replicates)
     replicates = 20;
 end
 
-% set the metric to "Dunn's average rep" if unspecified or invalid
+% set the metric to "Dunn's average" if unspecified or invalid
 if nargin < 6 || isempty(metric)
     metric = "Dunn's average";
 elseif ~ismember(metric, ["Silhouette", "Dunn's average", "Dunn's minmax", "Dunn's average centroid", "AIC", "BIC", "Dunn's average rep", "gap", "Davies-Bouldin", "Calinski-Harabasz"]) % ---------------------------------UPDATE THIS LATER-----------------------
